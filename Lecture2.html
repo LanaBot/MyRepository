@@ -3,47 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
 </head>
 <body>
     <header>
-        <section>
-            <div>
-                <img src="res/images/me.png" alt = "My picture">
-            </div>
-            <div>
-                <ul>
-                    <li>John Doe</li>
-                    <li>27/06/1993</li>
-                    <li>Software Engineering</li>
-                </ul>
-            </div>
-            <div>
-                <strong>2.65</strong>
-            </div>
-        </section>
-        <section>
-            <h1>Courses</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Course title</th>
-                        <th>Semester</th>
-                        <th>Grade</th>
-                    </tr>
-                </thead>
-            </table>
-        </section>
-        <strong> Welcome to your dashboard!</strong>
+        <strong>Welcome to your dashboard!</strong>
     </header>
+    <section>
+        <div>
+            <img src="res/images/me.png" alt = "My picture">
+        </div>
+        <div>
+            <ul>
+                <li>John Doe</li>
+                <li>27/06/1993</li>
+                <li>Software Engineering</li>
+            </ul>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </section>
+    <section>
+        <h1>Courses</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Course title</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Agile Software Development</td>
+                    <td>Semester 1 fall</td>
+                    <td>82</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>System Modeling</td>
+                    <td>Semester 1 spring</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Object-oriented programming</td>
+                    <td>Semester 2 spring</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Estonian language level A2</td>
+                    <td>Semester 2 fall</td>
+                    <td>65</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"><button type="button">Add new course</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder = "Title"></td>
+                    <td>
+                        <select name="semester">
+                            <option>Semester 1 fall</option>
+                            <option>Semester 1 spring</option>
+                            <option>Semester 2 fall</option>
+                            <option>Semester 2 spring</option>
+                        </select>
+                    </td>
+                    <td><input type="number" placeholder="Grade" min="1" max="100"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
     <footer>
         <ul>
             <li>
-                <a href = "https://ois2.ut.ee/">OIS</a>
+                <a href = "https://ois2.ut.ee/" target="_blank">OIS</a>
             </li>
             <li>
-                <a href ="https://courses.cs.ut.ee/">Courses</a>
+                <a href ="https://courses.cs.ut.ee/" target="_blank">Courses</a>
             </li>
         </ul>
     </footer>

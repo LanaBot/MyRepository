@@ -1,0 +1,44 @@
+* {
+    front-size: 28;
+    font-weight: bold
+}
+p{
+    color: red;
+}
+
+.text{
+    background-color: green;
+    color: #ffffff;
+}
+
+#container .span2 {
+    color: purple;
+}
+
+[type="button"]{
+    background-color: #cccccc;
+    color: royalblue;
+    border: 5px dashed black;
+    position: fixed;
+
+}
+
+[type="button"]:hover{
+    background-color: red;
+    color : #ffffff;
+    border: 5px dashed blue;
+}
+
+body p :first-of-type{
+    font-size: 50px
+}
+
+div.text ::first-line{
+    font-size: 5px;
+    color: blue;
+}
+
+button{
+    position: sticky;
+}
+
